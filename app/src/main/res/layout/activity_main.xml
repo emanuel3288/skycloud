@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+<androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="80dp"
+            android:background="#68041363"
+            android:fontFamily="@font/royal"
+            android:gravity="center"
+            android:text="@string/ciudad"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:id="@+id/temperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ciudad"
+            android:layout_marginHorizontal="20dp"
+            android:background="#5704104C"
+            android:fontFamily="@font/dreamink"
+            android:gravity="center"
+            android:text="@string/temperatura"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temperatura"
+            android:layout_marginHorizontal="20dp"
+            android:background="#61030B37"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/humedadtexto"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="clip_vertical"
+                    android:fontFamily="@font/royal"
+                    android:text="Humedad"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_marginRight="50dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/vientotexto"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/royal"
+                    android:text="Viento"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_toRightOf="@+id/humedadtexto"
+                    android:layout_marginRight="2dp"
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_viento1"
+                    android:layout_toRightOf="@+id/vientotexto"
+                    android:layout_marginTop="-15dp"
+                    >
+
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"
+
+
+                >
+
+
+                <TextView
+                    android:id="@+id/humedad67"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/dreamink"
+                    android:gravity="center_horizontal"
+                    android:text="67 %"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_marginRight="50dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/velocidad_viento"
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/dreamink"
+                    android:gravity="center"
+                    android:text="@string/velocidad_del_viento"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_toRightOf="@+id/humedad67"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#61030B37"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/estadoDelTiempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/royal"
+                    android:text="@string/estado_del_tiempo"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imagen_de_icono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11dp"
+                    >
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

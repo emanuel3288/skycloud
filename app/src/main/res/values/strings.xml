@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">sky cloud</string>
+    <string name="temperatura">0°</string>
+    <string name="estado_del_tiempo">Estado del tiempo</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="hola_sta_es_mi_primera_app_del_clima_espero_que_la_disfruten">Hola, ésta es mi primera app del clima espero que la disfruten.</string>
+    <string name="boton_ciudad_mexico">Clima en Ciudad De Mexico</string>
+    <string name="boton_berlin">Clima En Berlin</string>
+    <string name="clima_en_buenos_aires">Clima en Buenos Aires</string>
+    <string name="clima_en_santiago_de_tol">Clima en Santiago De Tolú</string>
+    <string name="velocidad_del_viento">velocidad del viento</string>
+    <string name="ingrese_una_ciudad">Ingrese una ciudad...</string>
+</resources>

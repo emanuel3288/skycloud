@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0670"
+    android:orientation="vertical"
+    tools:context=".Ciudades"
+    >
+
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/hola_sta_es_mi_primera_app_del_clima_espero_que_la_disfruten"
+        android:textColor="@color/white" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/ingrese_una_ciudad"
+        android:textColor="@color/white"
+        >
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <Button
+        android:id="@+id/boton_editext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:background="#FF000923"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </Button>
+
+</LinearLayout>
